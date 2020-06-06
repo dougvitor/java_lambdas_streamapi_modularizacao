@@ -1,4 +1,4 @@
-package br.com.home.lambdas;
+package br.com.home.lambdas.ifuncional;
 
 import br.com.home.lambdas.utils.NumeroPorExtenso;
 

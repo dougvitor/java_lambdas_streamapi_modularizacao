@@ -1,7 +1,8 @@
-package br.com.home.lambdas;
+package br.com.home.lambdas.foreach;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class ForeachMain {
 	
@@ -20,7 +21,8 @@ public class ForeachMain {
 		aprovados.forEach(System.out::println);
 		
 		System.out.println("\nLambda #02...");
-		aprovados.forEach(ForeachMain::imprimir);
+		Consumer<? super String> consumer = ForeachMain::imprimir;
+		aprovados.forEach(consumer);
 	}
 	
 	static void imprimir(String nome) {
