@@ -7,9 +7,9 @@ public class PredicateMain {
 	public static void main(String[] args) {
 		
 		Predicate<Produto> isCaro = 
-				prod -> (prod.preco * (1 - prod.desconto)) >= 3000.00;
+				prod -> (prod.getPreco() * (1 - prod.getDesconto())) >= 3000.00;
 		
-		System.out.println(isCaro.test(new Produto("Notebook", 5000.00, 0.45)));
+		System.out.println(isCaro.test(new Produto("Notebook", 5000.00, 0.40)));
 	}
 
 }
