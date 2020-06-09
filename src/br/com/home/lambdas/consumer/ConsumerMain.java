@@ -16,7 +16,7 @@ public class ConsumerMain {
 		Produto p2 = new Produto("Notebook", 3500.00, 0.20);
 		Produto p3 = new Produto("Caderno", 27.00, 0.03);
 		Produto p4 = new Produto("Borracha", 7.5, 0.18);
-		Produto p5 = new Produto("Caneta", 4.95, 0.19);
+		Produto p5 = new Produto("Lapis", 4.95, 0.19);
 		
 		imprimir.accept(p1);
 		
