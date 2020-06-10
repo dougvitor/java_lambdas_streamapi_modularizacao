@@ -1,4 +1,4 @@
-package br.com.home.lambdas.desafio;
+package br.com.home.lambdas;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

@@ -1,4 +1,4 @@
-package br.com.home.stream;
+package br.com.home.stream.built;
 
 import java.util.Arrays;
 import java.util.List;
