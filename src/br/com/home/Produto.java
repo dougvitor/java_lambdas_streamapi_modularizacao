@@ -1,4 +1,4 @@
-package br.com.home.lambdas.predicate;
+package br.com.home;
 
 public class Produto {
 	

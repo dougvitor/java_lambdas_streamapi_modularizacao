@@ -6,7 +6,7 @@ import java.util.function.BinaryOperator;
 import java.util.function.Function;
 import java.util.function.UnaryOperator;
 
-import br.com.home.lambdas.predicate.Produto;
+import br.com.home.Produto;
 
 public class DesafioComposicaoDeFuncao {
 

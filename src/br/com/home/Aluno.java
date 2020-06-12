@@ -1,10 +1,10 @@
-package br.com.home.stream.filter;
+package br.com.home;
 
 public class Aluno {
 	
-	final String nome;
+	public final String nome;
 	
-	final double nota;
+	public final double nota;
 
 	public Aluno(String nome, double nota) {
 		this.nome = nome;

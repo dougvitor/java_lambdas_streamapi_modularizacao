@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
 
-import br.com.home.lambdas.predicate.Produto;
+import br.com.home.Produto;
 
 public class ConsumerMain {
 	

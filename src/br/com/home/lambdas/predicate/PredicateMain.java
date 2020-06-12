@@ -2,6 +2,8 @@ package br.com.home.lambdas.predicate;
 
 import java.util.function.Predicate;
 
+import br.com.home.Produto;
+
 public class PredicateMain {
 	
 	public static void main(String[] args) {
