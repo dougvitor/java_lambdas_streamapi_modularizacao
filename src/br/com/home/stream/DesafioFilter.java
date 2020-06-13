@@ -3,6 +3,7 @@ package br.com.home.stream;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Consumer;
+import java.util.function.Function;
 import java.util.function.Predicate;
 
 public class DesafioFilter {
@@ -24,12 +25,16 @@ public class DesafioFilter {
 		
 		Predicate<? super JogoExclusivo> generoPreferido = game -> game.getGenero() == Genero.CORRIDA;
 		
-		Consumer<? super JogoExclusivo> impressao = game -> System.out.println(game.getTitulo());
+		Function<JogoExclusivo, String> exibicao = 
+				game -> String.format("%s é um dos meus jogos de %s favoritos e exclusivo para o %s.", game.getTitulo(), game.getGenero().name().toLowerCase(), game.getPlataforma());
+		
+		Consumer<? super String> impressao = System.out::println;
 		
 		jogosExclusivos
 			.parallelStream()
 			.filter(plataformaFavorita)
 			.filter(generoPreferido)
+			.map(exibicao)
 			.forEach(impressao);
 	}
 
