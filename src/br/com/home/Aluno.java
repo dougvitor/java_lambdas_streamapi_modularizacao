@@ -10,5 +10,9 @@ public class Aluno {
 		this.nome = nome;
 		this.nota = nota;
 	}
+	
+	public String imprimirNotaAluno() {
+		return String.format("%s tem a nota %.2f", this.nome, this.nota);
+	}
 
 }
